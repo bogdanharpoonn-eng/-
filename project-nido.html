@@ -7,61 +7,73 @@
 <link rel="icon" href="img/logo-on-light.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=4">
 </head>
 <body class="page">
 
 <header class="site-header">
   <a class="brand" href="index.html" aria-label="buro 3.12">
-    <img src="img/logo-on-light.svg" alt="buro 3.12">
+    <img src="img/logo-on-photo.svg" alt="buro 3.12">
   </a>
-  <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
-</header>
-
-<nav class="menu" id="menu">
-  <button class="menu-close" id="menuClose" aria-label="Close"></button>
-  <div class="menu-inner">
-    <a href="index.html">Home</a>
-    <a href="portfolio.html" class="active">Portfolio</a>
+  <nav class="nav-text" style="color:var(--paper)">
+    <a href="portfolio.html">Portfolio</a>
     <a href="about.html">About</a>
     <a href="services.html">Service</a>
     <a href="contact.html">Contact</a>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<main>
-  <header class="project-head">
-    <div>
-      <p class="cat">HoReCa | Cafe / Bar</p>
-      <h1>NIDO</h1>
-      <a class="back" href="portfolio.html">Back to portfolio</a>
-    </div>
-    <div>
-      <p class="lede">Кафе-бар, зібраний навколо образу гнізда. Денна посадка й вечірня атмосфера — один простір, два сценарії світла.</p>
-      <div class="facts" style="margin-top:28px;">
-        <div><h4>Задача</h4><p>Зробити залу, яку запам’ятовують з порога, не втративши робочу логіку бару й кухні.</p></div>
-        <div><h4>Рішення</h4><p>Живе дерево в стійці, стеля-скульптура, цегла, камінь, шкіра. Світло веде гостя від входу до барної лінії.</p></div>
-        <div><h4>Статус</h4><p>Концепт, авторський нагляд, фіксація на майданчику.</p></div>
-      </div>
-    </div>
-  </header>
-  <div class="project-gallery">
-    <img src="img/nido-hero.jpg" alt="Барна стійка NIDO">
-    <img src="img/nido-viz.jpg" alt="Візуалізація зали">
-    <img src="img/nido-entrance.jpg" alt="Вхідна зона">
-    <img src="img/nido-window.jpg" alt="Лаунж біля вікна">
-    <img src="img/nido-lounge.jpg" alt="Посадка">
-    <img src="img/nido-table.jpg" alt="Зелений стіл">
-    <img src="img/nido-evening.jpg" alt="Вечірня зала">
-    <img src="img/nido-wood.jpg" alt="Дерев’яна стіна">
-    <img src="img/nido-corner.jpg" alt="Кут зали">
-    <video src="img/nido-video-01.mp4" controls playsinline></video>
+<section class="project-hero">
+  <img src="img/nido-hero.jpg" alt="NIDO">
+  <div class="slide-veil"></div>
+  <div class="project-hero-copy">
+    <p class="cat">Architecture | Hospitality</p>
+    <h1>NIDO</h1>
+    <p class="lede">Кафе-бар, зібраний навколо образу гнізда. Денна посадка й вечірня атмосфера — один простір, два сценарії світла.</p>
   </div>
-</main>
+</section>
+
+<div class="project-intro">
+  <div class="facts">
+    <h4>Category</h4>
+    <p>HoReCa · Cafe / Bar</p>
+    <h4>Status</h4>
+    <p>Концепт, авторський нагляд</p>
+  </div>
+  <div class="story">
+    <p>Задача — зробити залу, яку запам’ятовують з порога, не втративши робочу логіку бару й кухні.</p>
+    <p>Рішення: живе дерево в стійці, стеля-скульптура, цегла, камінь, шкіра. Світло веде гостя від входу до барної лінії.</p>
+  </div>
+</div>
+
+<div class="trio">
+  <img src="img/nido-entrance.jpg" alt="">
+  <img src="img/nido-viz.jpg" alt="">
+  <img src="img/nido-window.jpg" alt="">
+</div>
+
+<p class="caption">Гніздо як центр зали: дерево в стійці й дерев’яна скульптура стелі задають ритм простору.</p>
+
+<div class="wide"><img src="img/nido-lounge.jpg" alt=""></div>
+
+<div class="split">
+  <img src="img/nido-table.jpg" alt="">
+  <p>Денна посадка тримає спокій. Увечері світло збирає залу до барної лінії — той самий інтер’єр, інший сценарій.</p>
+</div>
+
+<div class="trio">
+  <img src="img/nido-wood.jpg" alt="">
+  <img src="img/nido-evening.jpg" alt="">
+  <img src="img/nido-corner.jpg" alt="">
+</div>
+
+<div class="wide"><img src="img/nido-bartender.jpg" alt=""></div>
+
+<a class="next-proj" href="project-personage.html">Personage | Next</a>
 
 <footer class="site-foot">
-  <span>© 2026 buro 3.12</span>
+  <span>buro 3.12</span>
   <span>Kyiv · Dnipro</span>
 </footer>
 <script src="js/site.js"></script>

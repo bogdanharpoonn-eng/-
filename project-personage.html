@@ -7,61 +7,75 @@
 <link rel="icon" href="img/logo-on-light.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=4">
 </head>
 <body class="page">
 
 <header class="site-header">
   <a class="brand" href="index.html" aria-label="buro 3.12">
-    <img src="img/logo-on-light.svg" alt="buro 3.12">
+    <img src="img/logo-on-photo.svg" alt="buro 3.12">
   </a>
-  <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
-</header>
-
-<nav class="menu" id="menu">
-  <button class="menu-close" id="menuClose" aria-label="Close"></button>
-  <div class="menu-inner">
-    <a href="index.html">Home</a>
-    <a href="portfolio.html" class="active">Portfolio</a>
+  <nav class="nav-text" style="color:var(--paper)">
+    <a href="portfolio.html">Portfolio</a>
     <a href="about.html">About</a>
     <a href="services.html">Service</a>
     <a href="contact.html">Contact</a>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<main>
-  <header class="project-head">
-    <div>
-      <p class="cat">Retail | Bags &amp; Shoes</p>
-      <h1>PERSONAGE</h1>
-      <a class="back" href="portfolio.html">Back to portfolio</a>
-    </div>
-    <div>
-      <p class="lede">Флагманський бутік сумок і взуття. Простір мовчить — говорить колекція.</p>
-      <div class="facts" style="margin-top:28px;">
-        <div><h4>Location</h4><p>Ukraine, Zaporizhzhia</p></div>
-        <div><h4>Area</h4><p>104 m²</p></div>
-        <div><h4>Year</h4><p>2020 · realised</p></div>
-        <div><h4>Рішення</h4><p>Бетонна оболонка, дзеркальні площини, підсвічені стелажі, острівні подіуми під взуття й сумки.</p></div>
-      </div>
-    </div>
-  </header>
-  <div class="project-gallery">
-    <img src="img/personage-hero.jpg" alt="Бренд-стіна PERSONAGE">
-    <img src="img/personage-hall.jpg" alt="Торгова зала">
-    <img src="img/personage-floor.jpg" alt="Навігація залу">
-    <img src="img/personage-03.jpg" alt="Експозиція">
-    <img src="img/personage-04.jpg" alt="Деталь залу">
-    <img src="img/personage-05.jpg" alt="Полиці">
-    <img src="img/personage-06.jpg" alt="Фрагмент">
-    <img src="img/personage-10.jpg" alt="Бутік">
-    <img src="img/personage-14.jpg" alt="Взуття">
+<section class="project-hero">
+  <img src="img/personage-hero.jpg" alt="PERSONAGE">
+  <div class="slide-veil"></div>
+  <div class="project-hero-copy">
+    <p class="cat">Architecture | Retail</p>
+    <h1>PERSONAGE</h1>
+    <p class="lede">Флагманський бутік сумок і взуття. Простір мовчить — говорить колекція.</p>
   </div>
-</main>
+</section>
+
+<div class="project-intro">
+  <div class="facts">
+    <h4>Location</h4>
+    <p>Zaporizhzhia, Ukraine</p>
+    <h4>Area</h4>
+    <p>104 m²</p>
+    <h4>Year</h4>
+    <p>2020 · realised</p>
+    <h4>Category</h4>
+    <p>Retail · Bags &amp; Shoes</p>
+  </div>
+  <div class="story">
+    <p>Задача — побудувати навігацію залу так, щоб гість читав асортимент без хаосу полиць.</p>
+    <p>Рішення: бетонна оболонка, дзеркальні площини, підсвічені стелажі, острівні подіуми під взуття й сумки.</p>
+  </div>
+</div>
+
+<div class="trio">
+  <img src="img/personage-hall.jpg" alt="">
+  <img src="img/personage-floor.jpg" alt="">
+  <img src="img/personage-03.jpg" alt="">
+</div>
+
+<p class="caption">Нейтральний бетон і світло на полицях: колекція виходить на перший план.</p>
+
+<div class="wide"><img src="img/personage-04.jpg" alt=""></div>
+
+<div class="split">
+  <img src="img/personage-05.jpg" alt="">
+  <p>Дзеркальні площини розширюють залу, не сперечаючись із товаром. Підсвічені ніші тримають ритм експозиції.</p>
+</div>
+
+<div class="trio">
+  <img src="img/personage-06.jpg" alt="">
+  <img src="img/personage-10.jpg" alt="">
+  <img src="img/personage-14.jpg" alt="">
+</div>
+
+<a class="next-proj" href="project-loft.html">Cozy loft | Next</a>
 
 <footer class="site-foot">
-  <span>© 2026 buro 3.12</span>
+  <span>buro 3.12</span>
   <span>Kyiv · Dnipro</span>
 </footer>
 <script src="js/site.js"></script>

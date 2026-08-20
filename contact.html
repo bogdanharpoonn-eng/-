@@ -7,8 +7,8 @@
 <link rel="icon" href="img/logo-on-light.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=4">
 </head>
 <body class="page">
 
@@ -16,40 +16,31 @@
   <a class="brand" href="index.html" aria-label="buro 3.12">
     <img src="img/logo-on-light.svg" alt="buro 3.12">
   </a>
-  <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
-</header>
-
-<nav class="menu" id="menu">
-  <button class="menu-close" id="menuClose" aria-label="Close"></button>
-  <div class="menu-inner">
-    <a href="index.html">Home</a>
+  <nav class="nav-text">
     <a href="portfolio.html">Portfolio</a>
     <a href="about.html">About</a>
     <a href="services.html">Service</a>
     <a href="contact.html" class="active">Contact</a>
-  </div>
-</nav>
+  </nav>
+</header>
 
 <main class="page-main">
   <div class="wrap">
     <p class="kicker">Contact</p>
-    <h1 class="page-title">Є об’єкт — починаємо з брифу.</h1>
+    <h1 class="page-title">Почати проєкт</h1>
     <p class="lead">Напишіть параметри приміщення. Архітектор відповість і запропонує наступний крок.</p>
 
     <div class="contact-boxes">
       <article>
-        <span class="ico">✉</span>
         <h3>Email</h3>
         <p><a href="mailto:project@buro312.com">project@buro312.com</a></p>
       </article>
       <article>
-        <span class="ico">⌖</span>
         <h3>Visit</h3>
-        <p>Київ · Дніпро<br>Україна та ЄС</p>
+        <p>Київ · Дніпро</p>
       </article>
       <article>
-        <span class="ico">☎</span>
-        <h3>Project</h3>
+        <h3>Work</h3>
         <p>Ресторан, рітейл, офіс, готель</p>
       </article>
     </div>
@@ -57,7 +48,7 @@
     <form id="brief">
       <div>
         <label for="name">Ім’я / компанія *</label>
-        <input id="name" name="name" required placeholder="Олександр / холдинг">
+        <input id="name" name="name" required>
       </div>
       <div class="row-2">
         <div>
@@ -72,25 +63,25 @@
         </div>
         <div>
           <label for="area">Площа, м²</label>
-          <input id="area" name="area" type="number" placeholder="350">
+          <input id="area" name="area" type="number">
         </div>
       </div>
       <div>
         <label for="how">Телефон або Telegram *</label>
-        <input id="how" name="how" required placeholder="+380… або @username">
+        <input id="how" name="how" required>
       </div>
       <div>
         <label for="note">Місто, стадія, терміни</label>
-        <textarea id="note" name="note" placeholder="Локація, стан приміщення, дата відкриття"></textarea>
+        <textarea id="note" name="note"></textarea>
       </div>
-      <button class="btn btn-fill" type="submit">Send</button>
-      <p class="form-note">Прототип. Заявка відкриє лист на пошту бюро.</p>
+      <button class="btn" type="submit">Send</button>
+      <p class="form-note">Заявка відкриє лист на пошту бюро.</p>
     </form>
   </div>
 </main>
 
 <footer class="site-foot">
-  <span>© 2026 buro 3.12</span>
+  <span>buro 3.12</span>
   <span>Kyiv · Dnipro</span>
 </footer>
 <script src="js/site.js"></script>

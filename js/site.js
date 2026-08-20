@@ -1,29 +1,57 @@
 (function () {
-  var btn = document.getElementById("menuBtn");
-  var menu = document.getElementById("menu");
-  var close = document.getElementById("menuClose");
+  var root = document.getElementById("heroSlider");
+  if (root) {
+    var slides = [].slice.call(root.querySelectorAll(".slide"));
+    var dotsWrap = document.getElementById("dots");
+    var i = 0;
+    var timer;
 
-  function openMenu() {
-    if (!menu) return;
-    menu.classList.add("on");
-    document.body.classList.add("lock");
-  }
-  function closeMenu() {
-    if (!menu) return;
-    menu.classList.remove("on");
-    document.body.classList.remove("lock");
-  }
-
-  if (btn) btn.addEventListener("click", openMenu);
-  if (close) close.addEventListener("click", closeMenu);
-  if (menu) {
-    menu.querySelectorAll("a").forEach(function (a) {
-      a.addEventListener("click", closeMenu);
+    slides.forEach(function (_, n) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.setAttribute("aria-label", "Slide " + (n + 1));
+      if (n === 0) b.className = "is-on";
+      b.addEventListener("click", function () { go(n); });
+      dotsWrap.appendChild(b);
     });
+    var dots = [].slice.call(dotsWrap.querySelectorAll("button"));
+
+    function go(n) {
+      slides[i].classList.remove("is-on");
+      dots[i].classList.remove("is-on");
+      i = (n + slides.length) % slides.length;
+      slides[i].classList.add("is-on");
+      dots[i].classList.add("is-on");
+      restart();
+    }
+    function restart() {
+      clearInterval(timer);
+      timer = setInterval(function () { go(i + 1); }, 10000);
+    }
+    root.querySelector(".arr.prev").addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      go(i - 1);
+    });
+    root.querySelector(".arr.next").addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      go(i + 1);
+    });
+    restart();
   }
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeMenu();
-  });
+
+  var header = document.querySelector(".site-header");
+  var brandImg = header && header.querySelector(".brand img");
+  var projectHero = document.querySelector(".project-hero");
+  if (header && brandImg && projectHero) {
+    window.addEventListener("scroll", function () {
+      var paper = window.scrollY > window.innerHeight * 0.72;
+      header.style.color = paper ? "" : "var(--paper)";
+      var next = paper ? "img/logo-on-light.svg" : "img/logo-on-photo.svg";
+      if (brandImg.getAttribute("src") !== next) brandImg.setAttribute("src", next);
+    }, { passive: true });
+  }
 
   var form = document.getElementById("brief");
   if (form) {

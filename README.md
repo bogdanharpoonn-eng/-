@@ -2,5 +2,5 @@
 
 Сайт архітектурного бюро.
 
-Жива сторінка після GitHub Pages:
+Жива сторінка:
 https://bogdanharpoonn-eng.github.io/-/

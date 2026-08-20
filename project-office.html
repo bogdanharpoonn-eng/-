@@ -7,52 +7,53 @@
 <link rel="icon" href="img/logo-on-light.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=4">
 </head>
 <body class="page">
 
 <header class="site-header">
   <a class="brand" href="index.html" aria-label="buro 3.12">
-    <img src="img/logo-on-light.svg" alt="buro 3.12">
+    <img src="img/logo-on-photo.svg" alt="buro 3.12">
   </a>
-  <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
-</header>
-
-<nav class="menu" id="menu">
-  <button class="menu-close" id="menuClose" aria-label="Close"></button>
-  <div class="menu-inner">
-    <a href="index.html">Home</a>
-    <a href="portfolio.html" class="active">Portfolio</a>
+  <nav class="nav-text" style="color:var(--paper)">
+    <a href="portfolio.html">Portfolio</a>
     <a href="about.html">About</a>
     <a href="services.html">Service</a>
     <a href="contact.html">Contact</a>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<main>
-  <header class="project-head">
-    <div>
-      <p class="cat">Office | Workplace</p>
-      <h1>Office space</h1>
-      <a class="back" href="portfolio.html">Back to portfolio</a>
-    </div>
-    <div>
-      <p class="lede">Офісний хол: бетонна стійка, дерев’яна стеля, решітка фасаду. Світло й текстура замість декору.</p>
-      <div class="facts" style="margin-top:28px;">
-        <div><h4>Location</h4><p>Ukraine, Dnipro</p></div>
-        <div><h4>Area</h4><p>298 m²</p></div>
-        <div><h4>Year</h4><p>2021 · building</p></div>
-      </div>
-    </div>
-  </header>
-  <div class="project-gallery">
-    <img src="img/office-hero.jpg" alt="Ресепшн офісу">
+<section class="project-hero">
+  <img src="img/office-hero.jpg" alt="Office space">
+  <div class="slide-veil"></div>
+  <div class="project-hero-copy">
+    <p class="cat">Architecture | Workplace</p>
+    <h1>Office space</h1>
+    <p class="lede">Офісний хол: бетонна стійка, дерев’яна стеля, решітка фасаду. Світло й текстура замість декору.</p>
   </div>
-</main>
+</section>
+
+<div class="project-intro">
+  <div class="facts">
+    <h4>Location</h4>
+    <p>Dnipro, Ukraine</p>
+    <h4>Area</h4>
+    <p>298 m²</p>
+    <h4>Year</h4>
+    <p>2021 · building</p>
+  </div>
+  <div class="story">
+    <p>Хол зібраний з бетону, дерева й теплого світла. Решітка за стійкою тримає ритм, не сперечаючись із масою рецепції.</p>
+  </div>
+</div>
+
+<div class="wide"><img src="img/office-hero.jpg" alt=""></div>
+
+<a class="next-proj" href="project-nido.html">NIDO | Next</a>
 
 <footer class="site-foot">
-  <span>© 2026 buro 3.12</span>
+  <span>buro 3.12</span>
   <span>Kyiv · Dnipro</span>
 </footer>
 <script src="js/site.js"></script>
