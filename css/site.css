@@ -26,7 +26,7 @@ button { background: none; border: none; cursor: pointer; }
 .site-header {
   position: fixed; inset: 0 0 auto 0;
   z-index: 50;
-  height: 88px;
+  height: 120px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
@@ -41,8 +41,16 @@ button { background: none; border: none; cursor: pointer; }
   background: var(--paper);
   color: var(--ink);
 }
-.brand { justify-self: start; }
-.brand img { height: 48px; width: auto; display: block; }
+.brand { justify-self: start; display: flex; align-items: center; }
+.brand img {
+  height: 104px;
+  width: auto;
+  display: block;
+}
+.home .site-header:not(.is-solid) .brand img,
+.has-hero .site-header:not(.is-solid) .brand img {
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,.35));
+}
 .nav-text {
   justify-self: center;
   display: flex; gap: 28px;
@@ -151,7 +159,7 @@ button { background: none; border: none; cursor: pointer; }
 
 /* INNER */
 .wrap { width: min(1180px, calc(100% - 56px)); margin: 0 auto; }
-.page-main { padding: 128px 0 96px; }
+.page-main { padding: 156px 0 96px; }
 .kicker {
   font-size: 10px;
   font-weight: 600;
@@ -251,7 +259,7 @@ h1.page-title, .project-head h1 {
 .j-card:hover img { filter: grayscale(0); transform: scale(1.03); }
 .j-card[hidden] { display: none; }
 
-.page-screen { padding: 128px 0 72px; }
+.page-screen { padding: 156px 0 72px; }
 .page-screen .journal { padding-top: 40px; }
 .page-title-center { text-align: center; margin-bottom: 8px; }
 .filters {
@@ -574,10 +582,10 @@ footer.site-foot {
 }
 
 @media (max-width: 900px) {
-  .site-header { padding: 0 18px; height: 72px; }
+  .site-header { padding: 0 18px; height: 92px; }
   .nav-text { gap: 14px; font-size: 9px; }
   .lang-switch { font-size: 9px; gap: 6px; }
-  .brand img { height: 40px; }
+  .brand img { height: 80px; }
   .journal { padding: 64px 18px 40px; }
   .journal-side {
     position: static;
