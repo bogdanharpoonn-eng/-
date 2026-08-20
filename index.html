@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>buro 3.12 — Architecture</title>
+<meta name="description" content="Архітектурне бюро комерційних просторів. Київ · Дніпро.">
+<link rel="icon" href="img/logo-on-light.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/nido-hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=2">
+</head>
+<body class="home">
+
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="buro 3.12">
+    <img src="img/logo-on-photo.svg" alt="buro 3.12">
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<nav class="menu" id="menu" aria-label="Site">
+  <button class="menu-close" id="menuClose" aria-label="Close"></button>
+  <div class="menu-inner">
+    <a href="index.html" class="active">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Service</a>
+    <a href="contact.html">Contact</a>
+    <a href="journal.html">Blog</a>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="hero-media">
+      <img src="img/nido-hero.jpg" alt="">
+    </div>
+    <div class="hero-veil"></div>
+    <div class="hero-copy">
+      <p class="welcome">Welcome to</p>
+      <h1>Simple.<br>Minimal<br>and Elegant.</h1>
+      <p>Архітектура комерційних просторів. Ресторани, рітейл, офіси, готелі. Київ · Дніпро.</p>
+      <div class="hero-actions">
+        <a class="btn btn-fill" href="portfolio.html">View work</a>
+        <a class="btn btn-ghost" href="contact.html">Start a project</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <span>buro 3.12</span>
+  <span>Kyiv · Dnipro</span>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
