@@ -61,6 +61,22 @@
   setHeader();
   window.addEventListener("scroll", setHeader, { passive: true });
 
+  var filter = document.getElementById("workFilter");
+  if (filter) {
+    var cards = [].slice.call(document.querySelectorAll("#workList .j-card"));
+    filter.addEventListener("click", function (e) {
+      var btn = e.target.closest("button");
+      if (!btn) return;
+      [].slice.call(filter.querySelectorAll("button")).forEach(function (b) {
+        b.classList.toggle("is-on", b === btn);
+      });
+      var cat = btn.getAttribute("data-cat") || "";
+      cards.forEach(function (c) {
+        c.hidden = !!(cat && c.getAttribute("data-cat") !== cat);
+      });
+    });
+  }
+
   var form = document.getElementById("brief");
   if (form) {
     form.addEventListener("submit", function (e) {

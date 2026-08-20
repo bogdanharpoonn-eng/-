@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=9">
+<link rel="stylesheet" href="css/site.css?v=10">
 </head>
 <body class="page">
 
@@ -24,66 +24,64 @@
   </nav>
 </header>
 
-<main class="page-main">
-  <div class="wrap">
-    <p class="kicker">Contact</p>
-    <h1 class="page-title">Почати проєкт</h1>
-    <p class="lead">Напишіть параметри приміщення. Архітектор відповість і запропонує наступний крок.</p>
+<main class="page-screen">
+  <section class="journal">
+    <p class="journal-side">Contact</p>
+    <div class="journal-inner">
+      <h1 class="page-title">Почати проєкт</h1>
+      <p class="lead">Напишіть параметри приміщення. Архітектор відповість і запропонує наступний крок.</p>
 
-    <div class="contact-boxes">
-      <article>
-        <h3>Email</h3>
-        <p><a href="mailto:project@buro312.com">project@buro312.com</a></p>
-      </article>
-      <article>
-        <h3>Visit</h3>
-        <p>Київ · Дніпро</p>
-      </article>
-      <article>
-        <h3>Work</h3>
-        <p>Ресторан, рітейл, офіс, готель</p>
-      </article>
+      <div class="inquiry">
+        <article>
+          <h2>Email</h2>
+          <p><a href="mailto:project@buro312.com">project@buro312.com</a></p>
+        </article>
+        <article>
+          <h2>Київ · Дніпро</h2>
+          <p>Україна</p>
+        </article>
+      </div>
+
+      <form id="brief">
+        <div>
+          <label for="name">Ім’я / компанія *</label>
+          <input id="name" name="name" required>
+        </div>
+        <div class="row-2">
+          <div>
+            <label for="type">Тип об’єкта</label>
+            <select id="type" name="type">
+              <option>Ресторан / бар</option>
+              <option>Рітейл / шоурум</option>
+              <option>Офіс</option>
+              <option>Готель</option>
+              <option>Інше</option>
+            </select>
+          </div>
+          <div>
+            <label for="area">Площа, м²</label>
+            <input id="area" name="area" type="number">
+          </div>
+        </div>
+        <div>
+          <label for="how">Телефон або Telegram *</label>
+          <input id="how" name="how" required>
+        </div>
+        <div>
+          <label for="note">Місто, стадія, терміни</label>
+          <textarea id="note" name="note"></textarea>
+        </div>
+        <button class="btn" type="submit">Send</button>
+        <p class="form-note">Заявка відкриє лист на пошту бюро.</p>
+      </form>
     </div>
-
-    <form id="brief">
-      <div>
-        <label for="name">Ім’я / компанія *</label>
-        <input id="name" name="name" required>
-      </div>
-      <div class="row-2">
-        <div>
-          <label for="type">Тип об’єкта</label>
-          <select id="type" name="type">
-            <option>Ресторан / бар</option>
-            <option>Рітейл / шоурум</option>
-            <option>Офіс</option>
-            <option>Готель</option>
-            <option>Інше</option>
-          </select>
-        </div>
-        <div>
-          <label for="area">Площа, м²</label>
-          <input id="area" name="area" type="number">
-        </div>
-      </div>
-      <div>
-        <label for="how">Телефон або Telegram *</label>
-        <input id="how" name="how" required>
-      </div>
-      <div>
-        <label for="note">Місто, стадія, терміни</label>
-        <textarea id="note" name="note"></textarea>
-      </div>
-      <button class="btn" type="submit">Send</button>
-      <p class="form-note">Заявка відкриє лист на пошту бюро.</p>
-    </form>
-  </div>
+  </section>
 </main>
 
 <footer class="site-foot">
   <span>buro 3.12</span>
   <span>Kyiv · Dnipro</span>
 </footer>
-<script src="js/site.js?v=8"></script>
+<script src="js/site.js?v=10"></script>
 </body>
 </html>

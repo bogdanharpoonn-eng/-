@@ -210,7 +210,80 @@ h1.page-title, .project-head h1 {
   transition: opacity .25s;
 }
 .journal-grid .j-card img { aspect-ratio: 4 / 3; }
+.journal-mix {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr 1fr;
+  gap: 36px 18px;
+  align-items: start;
+}
+.journal-mix .j-card.is-lead img { aspect-ratio: 16 / 10; }
+.journal-mix .j-card:not(.is-lead) img { aspect-ratio: 3 / 4; }
 .j-card:hover img { opacity: .82; }
+.j-card[hidden] { display: none; }
+
+.page-screen { padding: 128px 0 72px; }
+.page-screen .journal { padding-top: 40px; }
+.page-title-center { text-align: center; margin-bottom: 8px; }
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin: 8px 0 36px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+.filters button { color: var(--muted); }
+.filters button.is-on,
+.filters button:hover { color: var(--ink); }
+
+.about-copy {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.85;
+  max-width: 46rem;
+  margin: 28px 0 48px;
+}
+.about-copy p + p { margin-top: 1.15em; }
+.about-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 64px;
+  margin-bottom: 56px;
+  max-width: 860px;
+}
+.about-cols h3 {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.about-cols p { color: var(--muted); font-family: var(--serif); }
+
+.inquiry {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 64px;
+  margin: 36px 0 56px;
+}
+.inquiry h2 {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.inquiry a, .inquiry p { font-size: 1.05rem; }
+
+.journal-wide {
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
+  margin-top: 48px;
+}
 .j-card h3 {
   font-family: var(--serif);
   font-size: .95rem;
@@ -447,9 +520,10 @@ footer.site-foot {
     transform: none;
     margin-bottom: 10px;
   }
-  .journal-featured, .journal-grid, .work-grid, .project-intro, .split, .cols-2, .contact-boxes, .about-photos, .trio {
+  .journal-featured, .journal-grid, .journal-mix, .work-grid, .project-intro, .split, .cols-2, .contact-boxes, .about-photos, .trio, .about-cols, .inquiry {
     grid-template-columns: 1fr;
   }
+  .journal-mix .j-card img { aspect-ratio: 16 / 10; }
   .trio img { height: 52vh; }
   .work-grid { padding: 100px 18px 64px; }
   .about-photos img { height: 260px; }
