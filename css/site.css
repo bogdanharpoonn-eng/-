@@ -32,9 +32,15 @@ button { background: none; border: none; cursor: pointer; }
   align-items: center;
   padding: 0 40px;
   background: transparent;
+  transition: background .25s ease, color .25s ease;
 }
 .page .site-header { color: var(--ink); }
-.home .site-header { color: var(--paper); }
+.home .site-header,
+.has-hero .site-header { color: var(--paper); }
+.site-header.is-solid {
+  background: var(--paper);
+  color: var(--ink);
+}
 .brand { justify-self: start; }
 .brand img { height: 48px; width: auto; display: block; }
 .nav-text {

@@ -43,15 +43,19 @@
 
   var header = document.querySelector(".site-header");
   var brandImg = header && header.querySelector(".brand img");
-  var projectHero = document.querySelector(".project-hero");
-  if (header && brandImg && projectHero) {
-    window.addEventListener("scroll", function () {
-      var paper = window.scrollY > window.innerHeight * 0.72;
-      header.style.color = paper ? "" : "var(--paper)";
-      var next = paper ? "img/logo-on-light.svg" : "img/logo-on-photo.svg";
+  var overPhoto = document.body.classList.contains("home") || document.body.classList.contains("has-hero");
+
+  function setHeader() {
+    if (!header) return;
+    var solid = !overPhoto || window.scrollY > 24;
+    header.classList.toggle("is-solid", solid);
+    if (brandImg && overPhoto) {
+      var next = solid ? "img/logo-on-light.svg" : "img/logo-on-photo.svg";
       if (brandImg.getAttribute("src") !== next) brandImg.setAttribute("src", next);
-    }, { passive: true });
+    }
   }
+  setHeader();
+  window.addEventListener("scroll", setHeader, { passive: true });
 
   var form = document.getElementById("brief");
   if (form) {
