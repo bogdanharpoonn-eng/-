@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=12">
+<link rel="stylesheet" href="css/site.css?v=13">
 </head>
 <body class="page has-hero">
 
@@ -17,33 +17,38 @@
     <img src="img/logo-on-photo.svg" alt="buro 3.12">
   </a>
   <nav class="nav-text">
-    <a href="portfolio.html">Portfolio</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Service</a>
-    <a href="contact.html">Contact</a>
+    <a href="portfolio.html" data-i18n="nav_portfolio">Портфоліо</a>
+    <a href="about.html" data-i18n="nav_about">Про нас</a>
+    <a href="services.html" data-i18n="nav_service">Послуги</a>
+    <a href="contact.html" data-i18n="nav_contact">Контакти</a>
   </nav>
+  <div class="lang-switch">
+    <button type="button" data-lang="uk">UA</button>
+    <span aria-hidden="true">|</span>
+    <button type="button" data-lang="en">EN</button>
+  </div>
 </header>
 
 <section class="project-hero">
   <img src="img/nido-hero.jpg" alt="NIDO">
   <div class="slide-veil"></div>
   <div class="project-hero-copy">
-    <p class="cat">Architecture | Hospitality</p>
+    <p class="cat" data-i18n="nido_cat">HoReCa · Кафе / бар</p>
     <h1>NIDO</h1>
-    <p class="lede">Кафе-бар, зібраний навколо образу гнізда. Денна посадка й вечірня атмосфера — один простір, два сценарії світла.</p>
+    <p class="lede" data-i18n="nido_p">Кафе-бар, зібраний навколо образу гнізда. Денна посадка й вечірня атмосфера — один простір, два сценарії світла.</p>
   </div>
 </section>
 
 <div class="project-intro">
   <div class="facts">
-    <h4>Category</h4>
-    <p>HoReCa · Cafe / Bar</p>
-    <h4>Status</h4>
-    <p>Концепт, авторський нагляд</p>
+    <h4 data-i18n="fact_category">Категорія</h4>
+    <p data-i18n="nido_cat">HoReCa · Кафе / бар</p>
+    <h4 data-i18n="fact_status">Статус</h4>
+    <p data-i18n="nido_status">Концепт, авторський нагляд</p>
   </div>
   <div class="story">
-    <p>Задача — зробити залу, яку запам’ятовують з порога, не втративши робочу логіку бару й кухні.</p>
-    <p>Рішення: живе дерево в стійці, стеля-скульптура, цегла, камінь, шкіра. Світло веде гостя від входу до барної лінії.</p>
+    <p data-i18n="nido_s1">Задача — зробити залу, яку запам’ятовують з порога, не втративши робочу логіку бару й кухні.</p>
+    <p data-i18n="nido_s2">Рішення: живе дерево в стійці, стеля-скульптура, цегла, камінь, шкіра. Світло веде гостя від входу до барної лінії.</p>
   </div>
 </div>
 
@@ -53,13 +58,13 @@
   <img src="img/nido-window.jpg" alt="">
 </div>
 
-<p class="caption">Гніздо як центр зали: дерево в стійці й дерев’яна скульптура стелі задають ритм простору.</p>
+<p class="caption" data-i18n="nido_cap">Гніздо як центр зали: дерево в стійці й дерев’яна скульптура стелі задають ритм простору.</p>
 
 <div class="wide"><img src="img/nido-lounge.jpg" alt=""></div>
 
 <div class="split">
   <img src="img/nido-table.jpg" alt="">
-  <p>Денна посадка тримає спокій. Увечері світло збирає залу до барної лінії — той самий інтер’єр, інший сценарій.</p>
+  <p data-i18n="nido_split">Денна посадка тримає спокій. Увечері світло збирає залу до барної лінії — той самий інтер’єр, інший сценарій.</p>
 </div>
 
 <div class="trio">
@@ -70,11 +75,11 @@
 
 <div class="wide"><img src="img/nido-bartender.jpg" alt=""></div>
 
-<a class="next-proj" href="project-personage.html">Personage | Next</a>
+<a class="next-proj" href="project-personage.html">Personage | <span data-i18n="next">Далі</span></a>
 
 <footer class="site-foot">
   <span>buro 3.12</span>
 </footer>
-<script src="js/site.js?v=10"></script>
+<script src="js/site.js?v=13"></script>
 </body>
 </html>

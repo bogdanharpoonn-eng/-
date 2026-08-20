@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=12">
+<link rel="stylesheet" href="css/site.css?v=13">
 </head>
 <body class="page">
 
@@ -17,19 +17,24 @@
     <img src="img/logo-on-light.svg" alt="buro 3.12">
   </a>
   <nav class="nav-text">
-    <a href="portfolio.html">Portfolio</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Service</a>
-    <a href="contact.html" class="active">Contact</a>
+    <a href="portfolio.html" data-i18n="nav_portfolio">Портфоліо</a>
+    <a href="about.html" data-i18n="nav_about">Про нас</a>
+    <a href="services.html" data-i18n="nav_service">Послуги</a>
+    <a href="contact.html" class="active" data-i18n="nav_contact">Контакти</a>
   </nav>
+  <div class="lang-switch">
+    <button type="button" data-lang="uk">UA</button>
+    <span aria-hidden="true">|</span>
+    <button type="button" data-lang="en">EN</button>
+  </div>
 </header>
 
 <main class="page-screen">
   <section class="journal">
-    <p class="journal-side">Contact</p>
+    <p class="journal-side" data-i18n="nav_contact">Контакти</p>
     <div class="journal-inner">
-      <h1 class="page-title">Почати проєкт</h1>
-      <p class="lead">Напишіть параметри приміщення. Архітектор відповість і запропонує наступний крок.</p>
+      <h1 class="page-title" data-i18n="contact_title">Почати проєкт</h1>
+      <p class="lead" data-i18n="contact_lead">Напишіть параметри приміщення. Архітектор відповість і запропонує наступний крок.</p>
 
       <div class="inquiry">
         <article>
@@ -43,35 +48,35 @@
 
       <form id="brief">
         <div>
-          <label for="name">Ім’я / компанія *</label>
+          <label for="name" data-i18n="form_name">Ім’я / компанія *</label>
           <input id="name" name="name" required>
         </div>
         <div class="row-2">
           <div>
-            <label for="type">Тип об’єкта</label>
+            <label for="type" data-i18n="form_type">Тип об’єкта</label>
             <select id="type" name="type">
-              <option>Ресторан / бар</option>
-              <option>Рітейл / шоурум</option>
-              <option>Офіс</option>
-              <option>Готель</option>
-              <option>Інше</option>
+              <option data-i18n="opt_rest">Ресторан / бар</option>
+              <option data-i18n="opt_retail">Рітейл / шоурум</option>
+              <option data-i18n="opt_office">Офіс</option>
+              <option data-i18n="opt_hotel">Готель</option>
+              <option data-i18n="opt_other">Інше</option>
             </select>
           </div>
           <div>
-            <label for="area">Площа, м²</label>
+            <label for="area" data-i18n="form_area">Площа, м²</label>
             <input id="area" name="area" type="number">
           </div>
         </div>
         <div>
-          <label for="how">Телефон або Telegram *</label>
+          <label for="how" data-i18n="form_how">Телефон або Telegram *</label>
           <input id="how" name="how" required>
         </div>
         <div>
-          <label for="note">Місто, стадія, терміни</label>
+          <label for="note" data-i18n="form_note">Місто, стадія, терміни</label>
           <textarea id="note" name="note"></textarea>
         </div>
-        <button class="btn" type="submit">Send</button>
-        <p class="form-note">Заявка відкриє лист на пошту бюро.</p>
+        <button class="btn" type="submit" data-i18n="form_send">Надіслати</button>
+        <p class="form-note" data-i18n="form_hint">Заявка відкриє лист на пошту бюро.</p>
       </form>
     </div>
   </section>
@@ -80,6 +85,6 @@
 <footer class="site-foot">
   <span>buro 3.12</span>
 </footer>
-<script src="js/site.js?v=10"></script>
+<script src="js/site.js?v=13"></script>
 </body>
 </html>

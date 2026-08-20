@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=12">
+<link rel="stylesheet" href="css/site.css?v=13">
 </head>
 <body class="page has-hero">
 
@@ -17,37 +17,42 @@
     <img src="img/logo-on-photo.svg" alt="buro 3.12">
   </a>
   <nav class="nav-text">
-    <a href="portfolio.html">Portfolio</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Service</a>
-    <a href="contact.html">Contact</a>
+    <a href="portfolio.html" data-i18n="nav_portfolio">Портфоліо</a>
+    <a href="about.html" data-i18n="nav_about">Про нас</a>
+    <a href="services.html" data-i18n="nav_service">Послуги</a>
+    <a href="contact.html" data-i18n="nav_contact">Контакти</a>
   </nav>
+  <div class="lang-switch">
+    <button type="button" data-lang="uk">UA</button>
+    <span aria-hidden="true">|</span>
+    <button type="button" data-lang="en">EN</button>
+  </div>
 </header>
 
 <section class="project-hero">
   <img src="img/personage-hero.jpg" alt="PERSONAGE">
   <div class="slide-veil"></div>
   <div class="project-hero-copy">
-    <p class="cat">Architecture | Retail</p>
+    <p class="cat" data-i18n="personage_cat">Retail · Запоріжжя</p>
     <h1>PERSONAGE</h1>
-    <p class="lede">Флагманський бутік сумок і взуття. Простір мовчить — говорить колекція.</p>
+    <p class="lede" data-i18n="personage_lede">Флагманський бутік сумок і взуття. Простір мовчить — говорить колекція.</p>
   </div>
 </section>
 
 <div class="project-intro">
   <div class="facts">
-    <h4>Location</h4>
+    <h4 data-i18n="fact_location">Локація</h4>
     <p>Zaporizhzhia</p>
-    <h4>Area</h4>
+    <h4 data-i18n="fact_area">Площа</h4>
     <p>104 m²</p>
-    <h4>Year</h4>
-    <p>2020 · realised</p>
-    <h4>Category</h4>
-    <p>Retail · Bags &amp; Shoes</p>
+    <h4 data-i18n="fact_year">Рік</h4>
+    <p data-i18n="personage_year">2020 · реалізовано</p>
+    <h4 data-i18n="fact_category">Категорія</h4>
+    <p data-i18n="personage_cat">Retail · Запоріжжя</p>
   </div>
   <div class="story">
-    <p>Задача — побудувати навігацію залу так, щоб гість читав асортимент без хаосу полиць.</p>
-    <p>Рішення: бетонна оболонка, дзеркальні площини, підсвічені стелажі, острівні подіуми під взуття й сумки.</p>
+    <p data-i18n="personage_s1">Задача — побудувати навігацію залу так, щоб гість читав асортимент без хаосу полиць.</p>
+    <p data-i18n="personage_s2">Рішення: бетонна оболонка, дзеркальні площини, підсвічені стелажі, острівні подіуми під взуття й сумки.</p>
   </div>
 </div>
 
@@ -57,13 +62,13 @@
   <img src="img/personage-03.jpg" alt="">
 </div>
 
-<p class="caption">Нейтральний бетон і світло на полицях: колекція виходить на перший план.</p>
+<p class="caption" data-i18n="personage_cap">Нейтральний бетон і світло на полицях: колекція виходить на перший план.</p>
 
 <div class="wide"><img src="img/personage-04.jpg" alt=""></div>
 
 <div class="split">
   <img src="img/personage-05.jpg" alt="">
-  <p>Дзеркальні площини розширюють залу, не сперечаючись із товаром. Підсвічені ніші тримають ритм експозиції.</p>
+  <p data-i18n="personage_split">Дзеркальні площини розширюють залу, не сперечаючись із товаром. Підсвічені ніші тримають ритм експозиції.</p>
 </div>
 
 <div class="trio">
@@ -72,11 +77,11 @@
   <img src="img/personage-14.jpg" alt="">
 </div>
 
-<a class="next-proj" href="project-loft.html">Cozy loft | Next</a>
+<a class="next-proj" href="project-loft.html">Cozy loft | <span data-i18n="next">Далі</span></a>
 
 <footer class="site-foot">
   <span>buro 3.12</span>
 </footer>
-<script src="js/site.js?v=10"></script>
+<script src="js/site.js?v=13"></script>
 </body>
 </html>

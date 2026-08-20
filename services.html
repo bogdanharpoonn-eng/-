@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=12">
+<link rel="stylesheet" href="css/site.css?v=13">
 </head>
 <body class="page">
 
@@ -17,30 +17,35 @@
     <img src="img/logo-on-light.svg" alt="buro 3.12">
   </a>
   <nav class="nav-text">
-    <a href="portfolio.html">Portfolio</a>
-    <a href="about.html">About</a>
-    <a href="services.html" class="active">Service</a>
-    <a href="contact.html">Contact</a>
+    <a href="portfolio.html" data-i18n="nav_portfolio">Портфоліо</a>
+    <a href="about.html" data-i18n="nav_about">Про нас</a>
+    <a href="services.html" class="active" data-i18n="nav_service">Послуги</a>
+    <a href="contact.html" data-i18n="nav_contact">Контакти</a>
   </nav>
+  <div class="lang-switch">
+    <button type="button" data-lang="uk">UA</button>
+    <span aria-hidden="true">|</span>
+    <button type="button" data-lang="en">EN</button>
+  </div>
 </header>
 
 <main class="page-screen">
   <section class="journal">
-    <p class="journal-side">Service</p>
+    <p class="journal-side" data-i18n="nav_service">Послуги</p>
     <div class="journal-inner">
-      <h1 class="page-title">Що робимо</h1>
+      <h1 class="page-title" data-i18n="service_title">Що робимо</h1>
       <div class="cols-2">
         <div>
-          <h3>Аналіз і концепт</h3>
-          <p>Людинопотоки, посадка, ДБН, інженерія. Об’ємно-планувальне рішення, яке тримає бізнес-модель, а не лише картинку.</p>
-          <h3>Робочий проєкт</h3>
-          <p>Креслення, розгортки, вузли, специфікація матеріалів. Комплект, з яким можна виходити на майданчик.</p>
+          <h3 data-i18n="service_1h">Аналіз і концепт</h3>
+          <p data-i18n="service_1p">Людинопотоки, посадка, ДБН, інженерія. Об’ємно-планувальне рішення, яке тримає бізнес-модель, а не лише картинку.</p>
+          <h3 data-i18n="service_2h">Робочий проєкт</h3>
+          <p data-i18n="service_2p">Креслення, розгортки, вузли, специфікація матеріалів. Комплект, з яким можна виходити на майданчик.</p>
         </div>
         <div>
-          <h3>Авторський нагляд</h3>
-          <p>Контроль факту на об’єкті, викраси, комплектація. Відкриття без сюрпризів у бюджеті.</p>
-          <h3>Типи об’єктів</h3>
-          <p>Ресторани і бари. Рітейл і шоуруми. Офіси. Готелі.</p>
+          <h3 data-i18n="service_3h">Авторський нагляд</h3>
+          <p data-i18n="service_3p">Контроль факту на об’єкті, викраси, комплектація. Відкриття без сюрпризів у бюджеті.</p>
+          <h3 data-i18n="about_types_h">Типи об’єктів</h3>
+          <p data-i18n="about_types_p">Ресторани і бари. Рітейл і шоуруми. Офіси. Готелі.</p>
         </div>
       </div>
       <img class="journal-wide" src="img/nido-hero.jpg" alt="">
@@ -51,5 +56,6 @@
 <footer class="site-foot">
   <span>buro 3.12</span>
 </footer>
+<script src="js/site.js?v=13"></script>
 </body>
 </html>

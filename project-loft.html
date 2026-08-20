@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=12">
+<link rel="stylesheet" href="css/site.css?v=13">
 </head>
 <body class="page has-hero">
 
@@ -17,46 +17,51 @@
     <img src="img/logo-on-photo.svg" alt="buro 3.12">
   </a>
   <nav class="nav-text">
-    <a href="portfolio.html">Portfolio</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Service</a>
-    <a href="contact.html">Contact</a>
+    <a href="portfolio.html" data-i18n="nav_portfolio">Портфоліо</a>
+    <a href="about.html" data-i18n="nav_about">Про нас</a>
+    <a href="services.html" data-i18n="nav_service">Послуги</a>
+    <a href="contact.html" data-i18n="nav_contact">Контакти</a>
   </nav>
+  <div class="lang-switch">
+    <button type="button" data-lang="uk">UA</button>
+    <span aria-hidden="true">|</span>
+    <button type="button" data-lang="en">EN</button>
+  </div>
 </header>
 
 <section class="project-hero">
   <img src="img/loft-hero.jpg" alt="Cozy loft">
   <div class="slide-veil"></div>
   <div class="project-hero-copy">
-    <p class="cat">Interior | Residential</p>
+    <p class="cat" data-i18n="interior">Interior</p>
     <h1>Cozy loft</h1>
-    <p class="lede">Інтер’єр лофту: чорний метал, світле дерево, бетон. Кухня як тиха вісь квартири.</p>
+    <p class="lede" data-i18n="loft_lede">Інтер’єр лофту: чорний метал, світле дерево, бетон. Кухня як тиха вісь квартири.</p>
   </div>
 </section>
 
 <div class="project-intro">
   <div class="facts">
-    <h4>Location</h4>
+    <h4 data-i18n="fact_location">Локація</h4>
     <p>Dnipro</p>
-    <h4>Area</h4>
+    <h4 data-i18n="fact_area">Площа</h4>
     <p>87 m²</p>
-    <h4>Year</h4>
-    <p>2021 · realised</p>
-    <h4>Photo</h4>
+    <h4 data-i18n="fact_year">Рік</h4>
+    <p data-i18n="loft_year">2021 · реалізовано</p>
+    <h4 data-i18n="fact_photo">Фото</h4>
     <p>Vlad Radchenko</p>
   </div>
   <div class="story">
-    <p>Матеріали зібрані в один тон: матовий чорний, дуб, відкритий бетон. Світло працює плямами — без зайвого декору.</p>
+    <p data-i18n="loft_s1">Матеріали зібрані в один тон: матовий чорний, дуб, відкритий бетон. Світло працює плямами — без зайвого декору.</p>
   </div>
 </div>
 
 <div class="wide"><img src="img/loft-hero.jpg" alt=""></div>
 
-<a class="next-proj" href="project-office.html">Office space | Next</a>
+<a class="next-proj" href="project-office.html">Office space | <span data-i18n="next">Далі</span></a>
 
 <footer class="site-foot">
   <span>buro 3.12</span>
 </footer>
-<script src="js/site.js?v=10"></script>
+<script src="js/site.js?v=13"></script>
 </body>
 </html>

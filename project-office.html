@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=12">
+<link rel="stylesheet" href="css/site.css?v=13">
 </head>
 <body class="page has-hero">
 
@@ -17,44 +17,49 @@
     <img src="img/logo-on-photo.svg" alt="buro 3.12">
   </a>
   <nav class="nav-text">
-    <a href="portfolio.html">Portfolio</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Service</a>
-    <a href="contact.html">Contact</a>
+    <a href="portfolio.html" data-i18n="nav_portfolio">Портфоліо</a>
+    <a href="about.html" data-i18n="nav_about">Про нас</a>
+    <a href="services.html" data-i18n="nav_service">Послуги</a>
+    <a href="contact.html" data-i18n="nav_contact">Контакти</a>
   </nav>
+  <div class="lang-switch">
+    <button type="button" data-lang="uk">UA</button>
+    <span aria-hidden="true">|</span>
+    <button type="button" data-lang="en">EN</button>
+  </div>
 </header>
 
 <section class="project-hero">
   <img src="img/office-hero.jpg" alt="Office space">
   <div class="slide-veil"></div>
   <div class="project-hero-copy">
-    <p class="cat">Architecture | Workplace</p>
+    <p class="cat" data-i18n="office">Office</p>
     <h1>Office space</h1>
-    <p class="lede">Офісний хол: бетонна стійка, дерев’яна стеля, решітка фасаду. Світло й текстура замість декору.</p>
+    <p class="lede" data-i18n="office_lede">Офісний хол: бетонна стійка, дерев’яна стеля, решітка фасаду. Світло й текстура замість декору.</p>
   </div>
 </section>
 
 <div class="project-intro">
   <div class="facts">
-    <h4>Location</h4>
+    <h4 data-i18n="fact_location">Локація</h4>
     <p>Dnipro</p>
-    <h4>Area</h4>
+    <h4 data-i18n="fact_area">Площа</h4>
     <p>298 m²</p>
-    <h4>Year</h4>
-    <p>2021 · building</p>
+    <h4 data-i18n="fact_year">Рік</h4>
+    <p data-i18n="office_year">2021 · будівництво</p>
   </div>
   <div class="story">
-    <p>Хол зібраний з бетону, дерева й теплого світла. Решітка за стійкою тримає ритм, не сперечаючись із масою рецепції.</p>
+    <p data-i18n="office_s1">Хол зібраний з бетону, дерева й теплого світла. Решітка за стійкою тримає ритм, не сперечаючись із масою рецепції.</p>
   </div>
 </div>
 
 <div class="wide"><img src="img/office-hero.jpg" alt=""></div>
 
-<a class="next-proj" href="project-nido.html">NIDO | Next</a>
+<a class="next-proj" href="project-nido.html">NIDO | <span data-i18n="next">Далі</span></a>
 
 <footer class="site-foot">
   <span>buro 3.12</span>
 </footer>
-<script src="js/site.js?v=10"></script>
+<script src="js/site.js?v=13"></script>
 </body>
 </html>
