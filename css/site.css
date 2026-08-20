@@ -60,6 +60,8 @@ button { background: none; border: none; cursor: pointer; }
   height: 100svh;
   overflow: hidden;
   background: var(--ink);
+  overscroll-behavior: contain;
+  touch-action: pan-y;
 }
 .slide {
   position: absolute; inset: 0;
