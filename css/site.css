@@ -75,6 +75,13 @@ button { background: none; border: none; cursor: pointer; }
 .slide img {
   width: 100%; height: 100%;
   object-fit: cover;
+  filter: grayscale(1) contrast(1.08);
+  transform: scale(1.04);
+  transition: filter .45s ease, transform .6s ease;
+}
+.hero-slider:hover .slide.is-on img {
+  filter: grayscale(0);
+  transform: scale(1.06);
 }
 .slide-veil {
   position: absolute; inset: 0;
@@ -154,7 +161,14 @@ h1.page-title, .project-head h1 {
   grid-template-columns: repeat(2, 1fr);
   gap: 28px 18px;
 }
-.work-card img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.work-card img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: filter .45s ease, transform .6s ease;
+}
+.work-card:hover img { filter: grayscale(0); transform: scale(1.03); }
 .work-card h2 {
   font-family: var(--serif);
   font-size: .95rem;
@@ -207,7 +221,9 @@ h1.page-title, .project-head h1 {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
-  transition: opacity .25s;
+  filter: grayscale(1);
+  transition: filter .45s ease, transform .6s ease;
+  display: block;
 }
 .journal-grid .j-card img { aspect-ratio: 4 / 3; }
 .journal-mix {
@@ -218,7 +234,7 @@ h1.page-title, .project-head h1 {
 }
 .journal-mix .j-card.is-lead img { aspect-ratio: 16 / 10; }
 .journal-mix .j-card:not(.is-lead) img { aspect-ratio: 3 / 4; }
-.j-card:hover img { opacity: .82; }
+.j-card:hover img { filter: grayscale(0); transform: scale(1.03); }
 .j-card[hidden] { display: none; }
 
 .page-screen { padding: 128px 0 72px; }
@@ -283,6 +299,12 @@ h1.page-title, .project-head h1 {
   aspect-ratio: 16 / 8;
   object-fit: cover;
   margin-top: 48px;
+  filter: grayscale(1);
+  transition: filter .45s ease, transform .6s ease;
+}
+.journal-wide:hover {
+  filter: grayscale(0);
+  transform: scale(1.03);
 }
 .j-card h3 {
   font-family: var(--serif);
@@ -319,6 +341,13 @@ h1.page-title, .project-head h1 {
 .project-hero img {
   width: 100%; height: 100%;
   object-fit: cover;
+  filter: grayscale(1) contrast(1.08);
+  transform: scale(1.04);
+  transition: filter .45s ease, transform .6s ease;
+}
+.project-hero:hover img {
+  filter: grayscale(0);
+  transform: scale(1.06);
 }
 .project-hero .slide-veil { pointer-events: none; }
 .project-hero-copy {
@@ -384,7 +413,12 @@ h1.page-title, .project-head h1 {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 8px;
 }
-.trio img { width: 100%; height: 72vh; object-fit: cover; }
+.trio img {
+  width: 100%; height: 72vh; object-fit: cover;
+  filter: grayscale(1);
+  transition: filter .45s ease, transform .6s ease;
+}
+.trio img:hover { filter: grayscale(0); transform: scale(1.03); }
 
 .split {
   width: min(1100px, calc(100% - 56px));
@@ -394,7 +428,12 @@ h1.page-title, .project-head h1 {
   gap: 36px 48px;
   align-items: center;
 }
-.split img { width: 100%; }
+.split img {
+  width: 100%;
+  filter: grayscale(1);
+  transition: filter .45s ease, transform .6s ease;
+}
+.split img:hover { filter: grayscale(0); transform: scale(1.03); }
 .split p {
   font-family: var(--serif);
   font-size: 1.05rem;
@@ -411,8 +450,14 @@ h1.page-title, .project-head h1 {
 .wide {
   width: min(1180px, calc(100% - 40px));
   margin: 8px auto 36px;
+  overflow: hidden;
 }
-.wide img { width: 100%; max-height: 86vh; object-fit: cover; }
+.wide img {
+  width: 100%; max-height: 86vh; object-fit: cover;
+  filter: grayscale(1);
+  transition: filter .45s ease, transform .6s ease;
+}
+.wide img:hover { filter: grayscale(0); transform: scale(1.03); }
 
 .next-proj {
   display: block;
@@ -446,7 +491,12 @@ h1.page-title, .project-head h1 {
   grid-template-columns: 1fr 1.15fr 1fr;
   gap: 10px;
 }
-.about-photos img { width: 100%; height: 420px; object-fit: cover; }
+.about-photos img {
+  width: 100%; height: 420px; object-fit: cover;
+  filter: grayscale(1);
+  transition: filter .45s ease, transform .6s ease;
+}
+.about-photos img:hover { filter: grayscale(0); transform: scale(1.03); }
 
 .contact-boxes {
   display: grid;
