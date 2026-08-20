@@ -208,7 +208,7 @@
     }
     function restart() {
       clearInterval(timer);
-      timer = setInterval(function () { go(i + 1); }, 10000);
+      timer = setInterval(function () { go(i + 1); }, 3000);
     }
     root.querySelector(".arr.prev").addEventListener("click", function (e) {
       e.preventDefault();
