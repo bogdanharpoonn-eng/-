@@ -319,24 +319,6 @@ input:focus, select:focus, textarea:focus { border-bottom-color: var(--ink); }
 .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 .form-note { font-size: .8rem; color: var(--muted); font-weight: 300; }
 
-/* JOURNAL */
-.journal-list { display: grid; gap: 48px; margin-top: 48px; }
-.journal-item {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 36px;
-  align-items: center;
-}
-.journal-item img { width: 100%; height: 280px; object-fit: cover; filter: grayscale(1); }
-.journal-item time {
-  font-size: .68rem;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.journal-item h2 { font-size: 1.4rem; margin: 10px 0 12px; }
-.journal-item p { color: var(--muted); font-weight: 300; }
-
 footer.site-foot {
   border-top: 1px solid var(--line);
   padding: 22px 36px;
@@ -353,7 +335,7 @@ footer.site-foot {
 
 @media (max-width: 900px) {
   .masonry { columns: 2; padding-top: 110px; }
-  .project-head, .journal-item, .cols-2, .contact-boxes, .about-photos {
+  .project-head, .cols-2, .contact-boxes, .about-photos {
     grid-template-columns: 1fr;
   }
   .about-photos img, .about-photos figure:nth-child(2) img { height: 280px; }
